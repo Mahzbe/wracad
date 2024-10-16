@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wraca - Academy and Wraca Cup offering crash courses in football, music, and video production.">
+    <title>Wraca - Academy & Wraca Cup</title>
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero-content {
+            background-image: url('football-hero.jpg');
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .cta {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta:hover {
+            background-color: #e6b800;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .course-list {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .course {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #media .media-content {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #media .media-item {
+            width: 45%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+            max-width: 500px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .social-links a {
+            color: #ffcc00;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Wraca</h1>
+            <p>Academy & Wraca Cup</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#tournament">Wraca Cup</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Wraca Academy</h2>
+            <p>Your gateway to mastering football and exploring the world of sports media.</p>
+            <a href="#tournament" class="cta">Join the Wraca Cup</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Wraca</h2>
+        <p>Wraca is more than just a football tournament. We offer comprehensive crash courses in football skills, fitness, and creative media production, including music and video creation. Our academy blends football culture with creativity, ensuring an all-rounded experience for our participants.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <h3>Football Techniques</h3>
+                <p>Master football tactics, ball control, and fitness through our immersive crash courses taught by experienced coaches.</p>
+            </div>
+            <div class="course">
+                <h3>Music & Football</h3>
+                <p>Learn how to blend your love for football with music production, creating tracks that capture the spirit of the game.</p>
+            </div>
+            <div class="course">
+                <h3>Video Production</h3>
+                <p>Explore the world of sports media by producing high-quality football highlight reels, documentaries, and promotional videos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wraca Cup Section -->
+    <section id="tournament">
+        <h2>The Wraca Cup</h2>
+        <p>The Wraca Cup is our flagship tournament, welcoming players of all skill levels. Compete, showcase your talent, and stand a chance to win exciting prizes.</p>
+        <a href="#contact" class="cta">Register Now</a>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Media and Highlights</h2>
+        <div class="media-content">
+            <div class="media-item">
+                <h3>Football Highlights</h3>
+                <video src="highlights.mp4" controls></video>
+            </div>
+            <div class="media-item">
+                <h3>Music & Tracks</h3>
+                <audio src="wraca-song.mp3" controls></audio>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Reach out to us through the form below or follow us on social media.</p>
+        <form action="/submit" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Wraca Academy. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+</body>
+</html>
