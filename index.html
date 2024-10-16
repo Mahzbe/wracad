@@ -54,16 +54,10 @@
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
-            display: inline-block;
-            position: relative;
-            background-image: url('wracacup.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
         }
 
         .cta:hover {
-            background-color: rgba(255, 204, 0, 0.8);
+            background-color: #e6b800;
         }
 
         section {
@@ -126,6 +120,43 @@
             color: #ffcc00;
             margin: 0 10px;
             text-decoration: none;
+        }
+
+        /* Wraca Cup Section Styles */
+        #tournament {
+            background-image: url('wracacup.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        #tournament .cta {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            position: relative; /* Ensure it is above the background */
+            z-index: 1;
+        }
+
+        #tournament::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0; /* Ensure it's behind the content */
+        }
+
+        #tournament h2,
+        #tournament p {
+            color: white;
+            position: relative;
+            z-index: 1; /* Ensure these are above the overlay */
         }
     </style>
 </head>
