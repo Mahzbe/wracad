@@ -40,12 +40,14 @@
             font-weight: bold;
         }
 
-        .hero-content {
-            background-image: url('football-hero.jpg');
+        /* Hero Section Background */
+        #hero {
+            background-image: url('fbg.jpg');
             background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
             text-align: center;
             color: white;
-            padding: 100px 20px;
         }
 
         .cta {
@@ -75,6 +77,20 @@
             background-color: #f4f4f4;
             padding: 20px;
             border-radius: 5px;
+        }
+
+        .course button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .course button:hover {
+            background-color: #e6b800;
         }
 
         #media .media-content {
@@ -179,13 +195,11 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background -->
     <section id="hero">
-        <div class="hero-content">
-            <h2>Welcome to Wraca Academy</h2>
-            <p>Your gateway to mastering football and exploring the world of sports media.</p>
-            <a href="#tournament" class="cta">Join the Wraca Cup</a>
-        </div>
+        <h2>Welcome to Wraca Academy</h2>
+        <p>Your gateway to mastering football and exploring the world of sports media.</p>
+        <a href="#tournament" class="cta">Join the Wraca Cup</a>
     </section>
 
     <!-- About Us Section -->
@@ -201,14 +215,17 @@
             <div class="course">
                 <h3>Football Techniques</h3>
                 <p>Master football tactics, ball control, and fitness through our immersive crash courses taught by experienced coaches.</p>
+                <button>Enroll Now</button>
             </div>
             <div class="course">
                 <h3>Music & Football</h3>
                 <p>Learn how to blend your love for football with music production, creating tracks that capture the spirit of the game.</p>
+                <button>Enroll Now</button>
             </div>
             <div class="course">
                 <h3>Video Production</h3>
                 <p>Explore the world of sports media by producing high-quality football highlight reels, documentaries, and promotional videos.</p>
+                <button>Enroll Now</button>
             </div>
         </div>
     </section>
