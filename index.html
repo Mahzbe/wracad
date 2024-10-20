@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wraca - Academy and Wraca Cup offering crash courses in football, music, and video production.">
-    <title>Wraca - Academy & Wraca Cup</title>
+    <meta name="description" content="Wraca - Home of Wraca United and the Wraca Cup. Empowering grassroots football and youth development.">
+    <title>Wraca United & Wraca Cup</title>
     
     <style>
         /* General Styles */
@@ -40,14 +40,13 @@
             font-weight: bold;
         }
 
-        /* Hero Section Background */
-        #hero {
+        /* Hero Section */
+        .hero-content {
             background-image: url('fbg.jpg');
             background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
             text-align: center;
             color: white;
+            padding: 100px 20px;
         }
 
         .cta {
@@ -67,6 +66,38 @@
             text-align: center;
         }
 
+        /* Wraca United Section */
+        #wraca-united {
+            background-image: url('wracacup.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+
+        #wraca-united::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        #wraca-united h2,
+        #wraca-united p {
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        #wraca-united .cta {
+            z-index: 1;
+        }
+
+        /* Other Sections */
         .course-list {
             display: flex;
             justify-content: space-around;
@@ -77,29 +108,6 @@
             background-color: #f4f4f4;
             padding: 20px;
             border-radius: 5px;
-        }
-
-        .course button {
-            background-color: #ffcc00;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-        .course button:hover {
-            background-color: #e6b800;
-        }
-
-        #media .media-content {
-            display: flex;
-            justify-content: space-around;
-        }
-
-        #media .media-item {
-            width: 45%;
         }
 
         form {
@@ -138,42 +146,6 @@
             text-decoration: none;
         }
 
-        /* Wraca Cup Section Styles */
-        #tournament {
-            background-image: url('wracacup.jpg');
-            background-size: cover;
-            background-position: center;
-            padding: 100px 20px;
-            position: relative;
-        }
-
-        #tournament .cta {
-            background-color: #ffcc00;
-            color: #333;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            position: relative; /* Ensure it is above the background */
-            z-index: 1;
-        }
-
-        #tournament::before {
-            content: "";
-            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 0; /* Ensure it's behind the content */
-        }
-
-        #tournament h2,
-        #tournament p {
-            color: white;
-            position: relative;
-            z-index: 1; /* Ensure these are above the overlay */
-        }
     </style>
 </head>
 <body>
@@ -181,82 +153,53 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <h1>Wraca</h1>
-            <p>Academy & Wraca Cup</p>
+            <h1>Wraca United</h1>
+            <p>The Heart of Grassroots Football</p>
         </div>
         <nav>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#tournament">Wraca Cup</a></li>
-                <li><a href="#media">Media</a></li>
+                <li><a href="#united">Wraca United</a></li>
+                <li><a href="#cup">Wraca Cup</a></li>
+                <li><a href="#youth">Youth Development</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Background -->
+    <!-- Hero Section -->
     <section id="hero">
-        <h2>Welcome to Wraca Academy</h2>
-        <p>Your gateway to mastering football and exploring the world of sports media.</p>
-        <a href="#tournament" class="cta">Join the Wraca Cup</a>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about">
-        <h2>About Wraca</h2>
-        <p>Wraca is more than just a football tournament. We offer comprehensive crash courses in football skills, fitness, and creative media production, including music and video creation. Our academy blends football culture with creativity, ensuring an all-rounded experience for our participants.</p>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="courses">
-        <h2>Our Courses</h2>
-        <div class="course-list">
-            <div class="course">
-                <h3>Football Techniques</h3>
-                <p>Master football tactics, ball control, and fitness through our immersive crash courses taught by experienced coaches.</p>
-                <button>Enroll Now</button>
-            </div>
-            <div class="course">
-                <h3>Music & Football</h3>
-                <p>Learn how to blend your love for football with music production, creating tracks that capture the spirit of the game.</p>
-                <button>Enroll Now</button>
-            </div>
-            <div class="course">
-                <h3>Video Production</h3>
-                <p>Explore the world of sports media by producing high-quality football highlight reels, documentaries, and promotional videos.</p>
-                <button>Enroll Now</button>
-            </div>
+        <div class="hero-content">
+            <h2>Welcome to Wraca United</h2>
+            <p>Your home for grassroots football and community-driven youth development.</p>
+            <a href="#cup" class="cta">Explore the Wraca Cup</a>
         </div>
+    </section>
+
+    <!-- Wraca United Section -->
+    <section id="wraca-united">
+        <h2>Wraca United: The Mixed Team</h2>
+        <p>Wraca United is composed of top players from various grassroots clubs, forming a national squad of exceptional talent. Our players represent the best of local football, united to compete at the highest level.</p>
+        <a href="#contact" class="cta">Learn More</a>
     </section>
 
     <!-- Wraca Cup Section -->
-    <section id="tournament">
+    <section id="cup">
         <h2>The Wraca Cup</h2>
-        <p>The Wraca Cup is our flagship tournament, welcoming players of all skill levels. Compete, showcase your talent, and stand a chance to win exciting prizes.</p>
-        <p><strong>Location:</strong> Moretele, North West</p>
+        <p>The Wraca Cup is our flagship tournament, open to all grassroots teams across the country. Compete for glory and make your mark!</p>
         <a href="#contact" class="cta">Register Now</a>
     </section>
 
-    <!-- Media Section -->
-    <section id="media">
-        <h2>Media and Highlights</h2>
-        <div class="media-content">
-            <div class="media-item">
-                <h3>Football Highlights</h3>
-                <video src="highlights.mp4" controls></video>
-            </div>
-            <div class="media-item">
-                <h3>Music & Tracks</h3>
-                <audio src="wraca-song.mp3" controls></audio>
-            </div>
-        </div>
+    <!-- Youth Development Section -->
+    <section id="youth">
+        <h2>Youth Development</h2>
+        <p>At Wraca, we are passionate about developing the next generation of football talent. Join our camps and training sessions designed for young players eager to grow their skills and love for the game.</p>
+        <a href="#contact" class="cta">Join the Academy</a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Have any questions? Reach out to us through the form below or follow us on social media.</p>
+        <p>Have any questions or want to get involved? Reach out to us via the form below, and we'll get back to you as soon as possible.</p>
         <form action="/submit" method="post">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
@@ -267,10 +210,12 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Wraca Academy. All Rights Reserved.</p>
+        <p>&copy; 2024 Wraca United. All Rights Reserved.</p>
         <div class="social-links">
-            <a href="#">Facebook</a>   
-     </div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
     </footer>
 
 </body>
