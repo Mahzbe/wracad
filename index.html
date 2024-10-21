@@ -104,6 +104,28 @@
             z-index: 1;
         }
 
+        /* Colorful Backgrounds for Other Sections */
+        #cup {
+            background: linear-gradient(45deg, #ffcc00, #ff6699, #66b3ff);
+            animation: backgroundRotation 10s linear infinite; /* Add animation */
+        }
+
+        #honor {
+            background: linear-gradient(45deg, #66ff66, #ffcc00, #ff6699);
+            animation: backgroundRotation 10s linear infinite; /* Add animation */
+        }
+
+        #contact {
+            background: linear-gradient(45deg, #ff6699, #66b3ff, #ffcc00);
+            animation: backgroundRotation 10s linear infinite; /* Add animation */
+        }
+
+        @keyframes backgroundRotation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         /* Other Sections */
         .course-list {
             display: flex;
