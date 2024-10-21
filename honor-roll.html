@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honor Roll Nomination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('wracacup.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            text-align: center;
+            color: white;
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 50px;
+            border-radius: 10px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 500px;
+        }
+        input, textarea, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="wraca.png" alt="Wraca Logo" style="width: 100px; height: 100px;">
+    <h1>Honor Roll Nomination</h1>
+</header>
+
+<div class="content">
+    <h2>Nominate an Outstanding Individual</h2>
+    <form action="https://formspree.io/f/xldrkyzw" method="POST">
+        <input type="text" name="nominee_name" placeholder="Nominee Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Reason for Nomination" required></textarea>
+        <button type="submit">Submit Nomination</button>
+    </form>
+    <a href="index.html">Return to Home</a>
+</div>
+
+<footer>
+    &copy; 2024 Wraca United
+</footer>
+
+</body>
+</html>
