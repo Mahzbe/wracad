@@ -58,6 +58,13 @@
             background-color: #333;
             color: white;
         }
+        .nominee-showcase {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: rgba(255, 204, 0, 0.8);
+            border-radius: 10px;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -69,13 +76,26 @@
 
 <div class="content">
     <h2>Nominate an Outstanding Individual</h2>
+    <p>Welcome to the Honor Roll Nomination page for Wraca United. This is your chance to recognize the individuals who have made a lasting impact in grassroots football, not only within Moretele Section Northwest but also in neighboring settlements. 
+       Whether they are players, coaches, or community leaders, their contributions to the sport and the community deserve to be highlighted and celebrated.</p>
+    <p>The Honor Roll is a prestigious recognition that shines a light on the unsung heroes of our footballing community. We are still in the process of developing this special roll, but you can help us get started by nominating those who have gone above and beyond. Every nomination counts as we work to build this legacy together.</p>
+    <p>It’s important to act now and make sure your voice is heard—start nominating today, and let’s ensure these efforts don’t go unnoticed!</p>
+
     <form action="https://formspree.io/f/xldrkyzw" method="POST">
         <input type="text" name="nominee_name" placeholder="Nominee Name" required>
+        <input type="text" name="nominee_location" placeholder="Nominee Location (Moretele Section NW or Nearby Settlements)" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Reason for Nomination" required></textarea>
         <button type="submit">Submit Nomination</button>
     </form>
     <a href="index.html">Return to Home</a>
+</div>
+
+<!-- Showcase for Honor Roll Nominees -->
+<div class="nominee-showcase">
+    <h3>Nominees Showcase</h3>
+    <p>We are excited to soon begin showcasing the exceptional individuals nominated for the Honor Roll. This space will be dedicated to highlighting their stories, achievements, and contributions to the local football community.</p>
+    <p>Although this section is still under development, your early nominations will play a crucial role in building the foundation for recognizing the best in grassroots football. Don’t miss the opportunity to ensure their efforts are acknowledged—submit your nomination today!</p>
 </div>
 
 <footer>
